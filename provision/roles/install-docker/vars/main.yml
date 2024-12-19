@@ -1,0 +1,11 @@
+---
+packages:
+  - git
+  - apt-transport-https
+  - ca-certificates
+  - wget
+  - curl
+  - software-properties-common
+  - gnupg2
+  - bash-completion
+# vars file for install-docker
