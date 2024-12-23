@@ -1,7 +1,7 @@
 ---
 all:
   hosts:
-    176.108.254.195:
+    176.108.255.69:
       ansible_user: user1
       ansible_ssh_private_key_file: /home/candui/.ssh/id_ed25519
       ansible_become: true

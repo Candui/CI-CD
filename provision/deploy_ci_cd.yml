@@ -1,0 +1,12 @@
+---
+- name: Deploy CI-CD folder to remote host
+  hosts: 176.108.255.69  # Укажите имя вашего хоста или группу хостов
+  become: yes  # Если требуется повышенные привилегии
+  tasks:
+    - name: Copy CI-CD folder to remote host
+      copy:
+        src: /home/candui/PetProject/CI-CD/provision  # Укажите локальный путь к папке CI-CD
+        dest: /home/user1/Project/  # Укажите путь на удаленном хосте
+        owner: user1  # Укажите владельца, если необходимо
+        mode: '0755'  # Укажите права доступа, если необходимо
+        remote_src: no  # Укажите, что источник локальный
